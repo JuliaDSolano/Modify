@@ -1,9 +1,8 @@
 /* ==== Google font ==== */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 @import url('font-awesome.css');
-/* ==== overwrite bootstrap standard ==== */
-@import url('animate.css');
 
+@import url('animate.css');
 
 
 body {
@@ -55,7 +54,7 @@ a:hover {
 }
 	
 /*===========================
-  Menu and Navigation
+  Menu e navegação
 ============================ */
 .navbar-brand {
   float: left;

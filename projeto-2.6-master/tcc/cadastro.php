@@ -57,41 +57,12 @@
     </script>
 </head>
 <body>
-<h4> Preencha o Formul&aacute;rio para efetuar o cadastro no site</h4>
 
 <form method="POST" action="controlador/conexao.php" onsubmit="return valida_dados(this)">
+    <?php
+    require_once "cadastro.phtml";
+    ?>
 
-    <input type="text" name="nome" placeholder="Nome" size="23">
-    <br>
-    <br>
-    <input type="email" name="email" placeholder="E-mail" size="23">
-    <br>
-    <br>
-    <input type="password" name="senha" placeholder="Senha" size="23">
-    <br>
-    <br>
-    <input type="password" name="confirmacao" placeholder="Confirme sua senha" size="23">
-
-    <p> Você é um usuário:</p>
-    <p> Físico  <input id="campoFisica" type="radio" name="tipoPessoa" value="fisica"> </p>
-    <p> Jurídico<input id="campoJuridica" type="radio" name="tipoPessoa" value="juridica"> </p>
-
-    
-    <input class="tipoFisico" type="text" name="cpf" placeholder="Digite seu CPF">
-    <p class="tipoFisico">tipo de acessibilidade</p>
-    <select class="tipoFisico" name="especificacao" size="1">
-        <option></option>
-        <option>muleta</option>
-        <option>cadeira de rodas manual</option>
-        <option>cadeira motorizada</option>
-        <option>hover board</option>
-        <option>skate</option>
-
-    <input class="tipoJuridico" type="text" name="razao_social" placeholder="Nome da empresa">
-    <input class="tipoJuridico" type="text" name="cnpj" placeholder="Digite o CNPJ">
-
-
-    <p><input type="submit" value="Continuar" name="Continuar"><a href=""></a></p>
 </form>
 </body>
 </html>
