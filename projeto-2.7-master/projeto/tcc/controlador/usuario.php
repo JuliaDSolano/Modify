@@ -1,6 +1,7 @@
 
 <?php
 require_once '../modelo/CrudLogin.php';
+
 if (isset($_GET['acao'])){
     $acao = $_GET['acao'];
 }else{
